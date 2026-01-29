@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Gestión de Usuarios</title>
+    <meta charset="UTF-8">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1>Gestión de Usuarios</h1>
-  <script type="module" src="js/main.js"></script>
+    <div class="container">
+        <h1> Gestión de Usuarios</h1>
+        
+        <div class="stats">
+            <p> <strong>Usuarios cargados:</strong> <span id="userCount">0</span></p>
+            <p> <strong>Tiempo de carga:</strong> <span id="loadTime">-</span> ms</p>
+        </div>
+        
+        <h2> Lista de Usuarios</h2>
+        <div id="loading" class="loading">
+             Cargando usuarios desde el servidor simulado...
+        </div>
+        <div id="userList"></div>
+        
+        <h2> Roles Únicos</h2>
+        <div class="roles" id="rolesContainer"></div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
