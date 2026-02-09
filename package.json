@@ -1,0 +1,14 @@
+{
+  "name": "api-tareas",
+  "version": "1.0.0",
+  "description": "API REST de tareas con autenticación",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
